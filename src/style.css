@@ -58,7 +58,7 @@ nav{
     background-repeat: no-repeat;
     background-position-x: center;
     margin-left: 4rem;
-    transition: 0.7s;
+    transition: 1.2s;
     animation: fade_in 1s;
 }
 .container{
