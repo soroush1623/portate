@@ -25,14 +25,27 @@
             
         </div>
         <nav class="nav">
-            <div><i class="fa-thin fa-user fa-3x" style="color:#51BB84;padding:0 0.7rem 1.5rem 0;"></i></div>
-            <div class="projects"><i class="fa-thin fa-file-code fa-3x" style="color:#51BB84;padding:0 0.7rem 1.5rem 0;"></i></div>
-            <div class="contact-me"><i class="fa-thin fa-phone fa-3x" style="color:#51BB84;padding:0 0.6rem 1.5rem 0;"></i></div>
+            <ul>
+                <li class="home cat">
+                    
+                    <i class="fa-thin fa-user fa-3x nav_btn" style="color:#51BB84;"></i>
+                    <h1 style="font-size: 1.7rem; margin-right:2.5rem;">about me</h1>
+                </li>
+                <li class="projects_cat cat">
+                    <i class="fa-thin fa-file-code fa-3x nav_btn" style="color:#51BB84;"></i>
+                    <h1 style="font-size: 1.7rem; margin-right:2.5rem;">examples</h1>
+                </li>
+                <li class="contact_me cat">
+                    <i class="fa-thin fa-phone fa-3x nav_btn" style="color:#51BB84;"></i>
+                    <h1 style="font-size: 1.7rem; margin-right:2.5rem;">contact me</h1>
+                </li>
+            </ul>
+            
         </nav>
     </header>
 
     <!-- main page -->
-    <div style="display:flex;">
+    <div class="main_container">
         <div class="img">
             <h2 style="font-size:1.5rem;padding-bottom: 1.5rem;">Developer</h2>
             <h1  style="font-size:3rem;font-weight:bold;padding:0 1rem 0.5rem 1rem;text-align: center;">Soroush Choghadaki</h1>
@@ -41,7 +54,7 @@
             <div>
                 <h1 style="font-weight: bold;font-size: 3rem;">about me</h1>
                 <h3 style="color:#51BB84;font-weight: bold;padding: 0.5rem 0;"> 22 years old <span style="padding:0 0.5rem ;"> / </span>Karaj<span style="padding:0 0.5rem ;"> / </span>freelancer</h3>
-                <p style="max-width: 100%;padding-top: 1.5rem;line-height: normal;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat repellendus, recusandae sint cupiditate praesentium nemo nulla voluptatibus vitae mollitia eos harum, dicta quam. 
+                <p style="max-width: 100%;padding-top: 1rem;line-height: 1.4rem; color:darkslategray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat repellendus, recusandae sint cupiditate praesentium nemo nulla voluptatibus vitae mollitia eos harum, dicta quam. 
                     Facere quasi laudantium libero similique porro. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sed tenetur magni amet sit vitae eligendi nisi velit dolores, reiciendis tempore fugit molestiae itaque saepe neque nam atque molestias! Temporibus.
                 </p>
             </div>
@@ -49,14 +62,58 @@
             <div class="category">
                 <h1 style="font-weight:bold;font-size:2.3rem;">My abilities</h1>
                 <div class="container-catg">
-                    <div class="itemes"></div>
-                    <div class="itemes"></div>
-                    <div class="itemes"></div>
-                    <div class="itemes"></div>
+                    <div class="itemes">
+                        <i style="color:#51BB84;" class="fa-thin fa-4x fa-book-open-reader"></i>
+                        <h1 style="font-size:1.7rem;font-weight:bold;margin:0.5rem 0;">fast learner</h1>
+                        <p style="line-height: normal; color:darkslategray">everyday learning new methods and upgrading skills</p>
+                    </div>
+                    <div class="itemes">
+                        <i style="color:#51BB84;" class="fa-thin fa-4x fa-display-code"></i>
+                        <h1 style="font-size:1.7rem;font-weight:bold;margin:0.5rem 0;">responsive design</h1>
+                        <p style="line-height: normal; color:darkslategray">an smooth responsive design that fits every screens</p>
+                    </div>
+                    <div class="itemes">
+                        <i style="color:#51BB84;" class="fa-thin fa-4x fa-people-group"></i>
+                        <h1 style="font-size:1.7rem;font-weight:bold;margin:0.5rem 0;">teamwork</h1>
+                        <p style="line-height: normal; color:darkslategray">suitble person for teamworking and good commucation skills</p>
+                    </div>
+                    <div class="itemes">
+                        <i style="color:#51BB84;" class="fa-thin fa-4x fa-comments-question"></i>
+                        <h1 style="font-size:1.7rem;font-weight:bold;margin:0.5rem 0;">support</h1>
+                        <p style="line-height: normal; color:darkslategray">theqnical support for customers</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- projects-->
+    <div style="margin-left:1rem;">
+        <div><img class="img2 hide" src="./src/123.jpg" alt="">
+        </div>
+        <div class="second_container hide">
+            <h1 style="font-size:2rem;font-weight: bold;padding:1rem 0 1rem 2rem; width: 70%;">projects</h1>
+            <div class="projects">
+                <img style="width: 95%; margin-top: 0.5rem;" src="./src/rating.webp" alt="">
+                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Interactive rating component</h1>
+            </div>
+            <div class="projects">
+                <img style="width: 95%; margin-top: 0.5rem;" src="./src/huddle.webp" alt="">
+                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Huddle landing page with a single introductory section</h1>
+            </div>
+            <div class="projects">
+                <img style="width: 95%; margin-top: 0.5rem;" src="./src/4 iteme.webp" alt="">
+                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Four card feature section</h1>
+            </div>
+            <div class="projects">
+                <img style="width: 95%; margin-top: 0.5rem;" src="./src/single.webp" alt="">
+                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Single price grid component</h1>
+            </div>
+        </div>
+        
+    </div>
+
+
     <script src="./src/script.js"></script>
 </body>
 </html>
