@@ -205,6 +205,7 @@ nav{
     transform: scale(0.98);
     color: grey;
 }
+
 @media screen and (max-width:550px) {
     
     body {
@@ -238,6 +239,7 @@ nav{
         align-items: center;
     }
     .img{
+        color: white;
         background-image: url(../src/22222.jpg);
         width: 100vw;
         height: auto;
@@ -245,7 +247,7 @@ nav{
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
-        color: #51BB84;
+        color:#318b5c;
         background-repeat: no-repeat;
         margin:0 ;
         transition:fade_in 1s;
