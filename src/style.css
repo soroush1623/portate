@@ -50,6 +50,7 @@ nav{
     z-index: 9;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.6); 
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.6);
+
 }
 .ham-menu{
     background-color: #51BB84;
@@ -238,6 +239,10 @@ nav{
         transition: 0.6s;
         z-index: 9;
         box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.6);
+        margin-right: 5rem;
+    }
+    .nav_ul{
+        margin-right: 3rem;
     }
     .main_container{
         display: flex;
@@ -353,12 +358,18 @@ nav{
         background-color:#1D1F20;
     }
     .img{
-        color: wheat;
+        color: white;
     }
     .card_description{
         color: gray;
     }
-    .top-bar .bottom-bar .middle-bar{
+    .top-bar{
+        background-color: black;
+    }
+    .middle-bar{
+        background-color: black;
+    }
+    .bottom-bar{
         background-color: black;
     }
     
