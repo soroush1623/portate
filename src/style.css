@@ -205,6 +205,15 @@ nav{
     transform: scale(0.98);
     color: grey;
 }
+.description{
+    max-width: 100%;
+    padding-top: 1rem;
+    line-height: 1.4rem;
+    color:darkslategray
+}
+.card_description{
+    line-height: normal; color:darkslategray;
+}
 
 @media screen and (max-width:550px) {
     
@@ -335,6 +344,23 @@ nav{
 @media (prefers-color-scheme: dark) {
     body{
         background-color: #1D1F20;
-        color: red;
+        color: white;
     }
+    .description{
+        color: gray;
+    }
+    nav{
+        background-color:#1D1F20;
+    }
+    .img{
+        color: wheat;
+    }
+    .card_description{
+        color: gray;
+    }
+    .top-bar .bottom-bar .middle-bar{
+        background-color: black;
+    }
+    
 }
+
