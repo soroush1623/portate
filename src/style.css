@@ -332,3 +332,9 @@ nav{
         opacity: 1; 
     }
 }
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #1D1F20;
+        color: red;
+    }
+}
