@@ -26,15 +26,7 @@ body {
     scroll-behavior: smooth;
     overflow: hidden;
     width: 100vw;
-}
-.theme_toggle{
-    width: 3rem;
-    height: 3rem;
-    background-color: grey;
-    position: absolute;
-    right: 0;
-    top: 0;
-    cursor: pointer;
+    color-scheme: light dark;
 }
 nav{
     display: flex;
@@ -237,6 +229,11 @@ nav{
     padding:1rem 0 1rem 2rem;
      width: 70%; 
 }
+.third_container{
+    flex-direction: row;
+
+}
+
 
 @media screen and (max-width:550px) {
     
@@ -408,7 +405,7 @@ nav{
         background-color:#1D1F20;
     }
     .img{
-        color: white;
+        color: #318b5c;
     }
     .card_description{
         color: gray;
@@ -422,6 +419,14 @@ nav{
     .bottom-bar{
         background-color: black;
     }
+    .cat_icon{
+        color: white;
+    }
+    .active{
+        color: #51BB84;
+    }
     
 }
+
+
 

@@ -68,16 +68,38 @@ $(document).on( "click", "ul li" , function() {
     if (this.classList.contains("home")){
         $(".fa-user").addClass("active")
         $(".fa-file-code").removeClass("active")
+        $(".fa-phone").removeClass("active")
         $(".container").removeClass("hide")
         $(".second_container").addClass('hide')
+        $(".third_container").addClass('hide')
     }
     if (this.classList.contains("projects_cat")){
         $(".fa-file-code").addClass("active")
         $(".fa-user").removeClass("active")
+        $(".fa-phone").removeClass("active")
         $(".second_container").removeClass("hide")
         $(".container").addClass('hide')
+        $(".third_container").addClass('hide')
     }
+    if (this.classList.contains("contact_me")){
+        $(".fa-phone").addClass("active")
+        $(".fa-user").removeClass("active")
+        $(".fa-file-code").removeClass("active")
+        $(".container").addClass("hide")
+        $(".second_container").addClass('hide')
+        $(".third_container").removeClass('hide')
+
+    }
+
 });
-
-
-
+var myMap = new ol.Map({
+    target: 'map',
+    key: 'web.e55231325392438ba3184c5c1f5ce260',
+    maptype: 'dreamy',
+    poi: true,
+    traffic: false,
+    view: new ol.View({
+        center: ol.proj.fromLonLat([35.8031025922739,50.89705988423992]),
+        zoom: 14
+    })
+});

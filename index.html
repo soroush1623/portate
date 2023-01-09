@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
     crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/all.css">
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css"> 
     
-</head>
+    <link href="https://static.neshan.org/sdk/openlayers/5.3.0/ol.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+    <script src="https://static.neshan.org/sdk/openlayers/5.3.0/ol.js" type="text/javascript"></script>
 <body>
     <header>
         <div class="ham-menu">
@@ -44,9 +46,6 @@
     </header>
 
     <!-- main page -->
-    <div class="theme_toggle">
-
-    </div>
     <div class="main_container">
         <div class="img">
             <h2 style="font-size:1.5rem;padding-bottom: 1.5rem;">Developer</h2>
@@ -115,7 +114,13 @@
         
     </div>
 
+    <!-- contact me-->
+    <div class="third_container hide">
+        <div id="map" style="width: 300px; height: 250px; background: #eee; border: 2px solid #aaa;"></div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="./src/script.js"></script>
+    
 </body>
 </html>
