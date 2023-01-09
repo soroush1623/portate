@@ -13,9 +13,8 @@
     <link rel="stylesheet" href="./src/all.css">
     <link rel="stylesheet" href="./src/style.css"> 
     
-    <link href="https://static.neshan.org/sdk/openlayers/5.3.0/ol.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-    <script src="https://static.neshan.org/sdk/openlayers/5.3.0/ol.js" type="text/javascript"></script>
+    <link href="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.css" rel="stylesheet" type="text/css">
+    <script src="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.js" type="text/javascript"></script>
 <body>
     <header>
         <div class="ham-menu">
@@ -94,33 +93,82 @@
         </div>
         <div class="second_container hide">
             <h1 class="title_2">projects</h1>
-            <div class="projects">
-                <img style="width: 95%; margin-top: 0.5rem;" src="./src/rating.webp" alt="">
-                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Interactive rating component</h1>
-            </div>
-            <div class="projects">
-                <img style="width: 95%; margin-top: 0.5rem;" src="./src/huddle.webp" alt="">
-                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Huddle landing page with a single introductory section</h1>
-            </div>
-            <div class="projects">
-                <img style="width: 95%; margin-top: 0.5rem;" src="./src/4 iteme.webp" alt="">
-                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Four card feature section</h1>
-            </div>
-            <div class="projects">
-                <img style="width: 95%; margin-top: 0.5rem;" src="./src/single.webp" alt="">
-                <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Single price grid component</h1>
-            </div>
+            <a target="_blank" href="https://soroush1623.github.io/soroush1623-interactive-rating-component-main/" style="text-decoration: none !important; color: inherit;">
+                <div class="projects">
+                    <img style="width: 95%; margin-top: 0.5rem;" src="./src/rating.webp" alt="">
+                    <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Interactive rating component</h1>
+                </div>
+            </a>
+            <a target="_blank" href="https://soroush1623.github.io/Huddle-landing-page/" style="text-decoration: none !important; color: inherit;">
+                <div class="projects">
+                    <img style="width: 95%; margin-top: 0.5rem;" src="./src/huddle.webp" alt="">
+                    <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Huddle landing page with a single introductory section</h1>
+                </div>
+            </a>
+            <a target="_blank" href="https://soroush1623.github.io/four-card-feature-section-master/" style="text-decoration: none !important; color: inherit;">
+                <div class="projects">
+                    <img style="width: 95%; margin-top: 0.5rem;" src="./src/4 iteme.webp" alt="">
+                    <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Four card feature section</h1>
+                </div>
+            </a>
+            <a target="_blank" href="https://soroush1623.github.io/single-component/" style="text-decoration: none !important; color: inherit;">
+                <div class="projects">
+                    <img style="width: 95%; margin-top: 0.5rem;" src="./src/single.webp" alt="">
+                    <h1 style="font-size:1.5rem; text-align:center; margin-top: 0.7rem; margin: 0.7rem 0.5rem;">Single price grid component</h1>
+                </div>
+            </a>
+            
         </div>
         
     </div>
 
     <!-- contact me-->
     <div class="third_container hide">
-        <div id="map" style="width: 300px; height: 250px; background: #eee; border: 2px solid #aaa;"></div>
+        <div  style="margin: 3rem;">
+            <h1 class="title_1" style="color: #51BB84;">contact me </h1>
+            <p class="description" style="line-height: normal; font-size: 2rem;">You can contact me trought the links below:</p>
+        </div>
+        <div class="page_3">
+            <ul class="social_container">
+                <li>
+                    <div class="social">
+                        <a href="https://github.com/soroush1623" target="_blank" style="text-decoration: none !important;color:inherit;" >
+                            <i class="fa fa-github fa-3x"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="social">
+                        <a href="https://t.me/soroush1623" target="_blank" style="text-decoration: none !important;color:inherit;" >
+                            <i class="fa fa-telegram fa-3x"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/soroush-choghadaki-nejad-a9a1a7193/" target="_blank" style="text-decoration: none !important;color:inherit;" >
+                            <i class="fa fa-linkedin fa-3x"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="map" style="width: 450px; height: 300px; background: #eee; border: 2px solid #aaa; margin: 3rem;"></div>
     </div>
 
+    <script src="https://kit.fontawesome.com/8a99bf3a37.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="./src/script.js"></script>
+    <script type="text/javascript">
+        var myMap = new L.Map('map', {
+            key: 'web.f42dfb4521be45a0bc32f46b5a9a52b6',
+            maptype: 'dreamy',
+            poi: true,
+            traffic: false,
+            center: [35.804326149798015,50.89934363030338],
+            zoom: 14
+        });
+    </script>
     
 </body>
 </html>

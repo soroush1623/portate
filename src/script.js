@@ -4,6 +4,11 @@ const middle_bar = document.querySelector(".middle-bar")
 const menu = document.querySelector(".nav")
 const img = document.querySelector(".img")
 const nav_btn = document.querySelectorAll(".nav_btn")
+let home = document.getElementsByClassName('home')
+let projects_cat = document.getElementsByClassName('projects_cat')
+let contact_me = document.getElementsByClassName('contact_me')
+nav_ul = document.getElementsByClassName('nav_ul')
+var cat_iteme = document.querySelectorAll('.cat_iteme')
 var menu_tuggle = false
 
 ham_butt.addEventListener( 'click', () => {
@@ -55,15 +60,7 @@ ham_butt.addEventListener( 'click', () => {
         }
     }
 })
-
-let home = document.getElementsByClassName('home')
-let projects_cat = document.getElementsByClassName('projects_cat')
-let contact_me = document.getElementsByClassName('contact_me')
-
-nav_ul = document.getElementsByClassName('nav_ul')
-var cat_iteme = document.querySelectorAll('.cat_iteme')
-
-$(document).on( "click", "ul li" , function() {
+$(".nav").on( "click", "ul li" , function() {
     $(this).addClass("active").siblings().removeClass('active')
     if (this.classList.contains("home")){
         $(".fa-user").addClass("active")
@@ -88,18 +85,5 @@ $(document).on( "click", "ul li" , function() {
         $(".container").addClass("hide")
         $(".second_container").addClass('hide')
         $(".third_container").removeClass('hide')
-
     }
-
-});
-var myMap = new ol.Map({
-    target: 'map',
-    key: 'web.e55231325392438ba3184c5c1f5ce260',
-    maptype: 'dreamy',
-    poi: true,
-    traffic: false,
-    view: new ol.View({
-        center: ol.proj.fromLonLat([35.8031025922739,50.89705988423992]),
-        zoom: 14
-    })
 });
