@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./src/style.css"> 
     
     <link href="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.min.css">
     <script src="https://static.neshan.org/sdk/leaflet/1.4.0/leaflet.js" type="text/javascript"></script>
+</head>
 <body>
     <header>
         <div class="ham-menu">
@@ -123,37 +125,61 @@
 
     <!-- contact me-->
     <div class="third_container hide">
-        <div  style="margin: 3rem;">
-            <h1 class="title_1" style="color: #51BB84;">contact me </h1>
-            <p class="description" style="line-height: normal; font-size: 2rem;">You can contact me trought the links below:</p>
+        <div  style="margin: 0rem;">
+            <h1 class="title_3" style="color: #51BB84;">contact me </h1>
+            <p class="description">You can contact me trought the links below:</p>
         </div>
         <div class="page_3">
             <ul class="social_container">
                 <li>
                     <div class="social">
                         <a href="https://github.com/soroush1623" target="_blank" style="text-decoration: none !important;color:inherit;" >
-                            <i class="fa fa-github fa-2x"></i>
+                            <i class="fa fa-github fa-xl"></i>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="social">
                         <a href="https://t.me/soroush1623" target="_blank" style="text-decoration: none !important;color:inherit;" >
-                            <i class="fa fa-telegram fa-2x"></i>
+                            <i class="fa fa-telegram fa-xl"></i>
                         </a>
                     </div>
                 </li>
                 <li>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/soroush-choghadaki-nejad-a9a1a7193/" target="_blank" style="text-decoration: none !important;color:inherit;" >
-                            <i class="fa fa-linkedin fa-2x"></i>
+                            <i class="fa fa-linkedin fa-xl"></i>
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
-        <div id="map"></div>
+        <form id="form" method="get">
+            <div class="form_container">
+                <span class="span">
+                    <label for="name">name:</label>
+                    <input class="input" type="text" id="name" autocomplete="on" placeholder="Name" required>
+                </span>
+                <span class="span">
+                    <label for="email">email:</label>
+                    <input class="input" type="email" id="email" autocomplete="on" placeholder="email" required>
+                </span>
+                <span class="span">
+                    <label for="subject">subject:</label>
+                    <input class="input" type="text" id="subject" placeholder="subject" required>
+                </span>
+            </div>
+           
+            <textarea class="input" id="letter" placeholder="description" id="letter" cols="35" rows="10" required></textarea>
+            <button class="btn" onclick="popup()">submit</button>
+        </form>
+        <div class="adress">
+            <div class="adress_text"><strong style="font-size: 1.4rem;font-weight: bold;">adress:  </strong>alborz province , Karaj , mehrshahr district</div>
+            <div id="map"></div>
+        </div>
+        
     </div>
+
 
     <footer>
         <p  class="footer">© 2023 soroush choghadaki</p>
@@ -162,6 +188,7 @@
     <script src="https://kit.fontawesome.com/8a99bf3a37.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="./src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.min.js"></script>
     <script type="text/javascript">
         var myMap = new L.Map('map', {
             key: 'web.f42dfb4521be45a0bc32f46b5a9a52b6',

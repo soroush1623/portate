@@ -99,7 +99,10 @@ $(".nav").on( "click", "ul li" , function() {
         $(".third_container").removeClass('hide')
     }
 });
-
-/*projects_cat.addEventListener('click', () =>{
-    if(window.screen.width <= 550){
-        )*/
+function popup(){
+    Swal.fire(
+        'warning!',
+        'this part of page doesn\'t working right now becuase it needs back-end knowlage!',
+        'warning'
+      )
+}
