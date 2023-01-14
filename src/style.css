@@ -96,6 +96,8 @@ nav{
     animation: fade_in 0.6s;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.6); 
     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.6);
+    height: auto;
+    background-size:cover;
 }
 .container{
     padding: 3rem;
