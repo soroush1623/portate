@@ -62,7 +62,11 @@ ham_butt.addEventListener( 'click', () => {
 })
 $(".nav").on( "click", "ul li" , function() {
     $(this).addClass("active").siblings().removeClass('active')
-    if (this.classList.contains("home")){
+    if (this.classList.contains("home") && window.screen.width <= 550){
+        const title_1 = document.querySelector('.title_1')
+        title_1.scrollIntoView()
+    }
+    if (this.classList.contains("home") && window.screen.width>= 550){
         $(".fa-user").addClass("active")
         $(".fa-file-code").removeClass("active")
         $(".fa-phone").removeClass("active")
@@ -70,7 +74,11 @@ $(".nav").on( "click", "ul li" , function() {
         $(".second_container").addClass('hide')
         $(".third_container").addClass('hide')
     }
-    if (this.classList.contains("projects_cat")){
+    if (this.classList.contains("projects_cat") && window.screen.width <= 550){
+        const title_2 = document.querySelector('.title_2')
+        title_2.scrollIntoView()
+    }
+    if (this.classList.contains("projects_cat") && window.screen.width >= 550){
         $(".fa-file-code").addClass("active")
         $(".fa-user").removeClass("active")
         $(".fa-phone").removeClass("active")
@@ -78,7 +86,11 @@ $(".nav").on( "click", "ul li" , function() {
         $(".container").addClass('hide')
         $(".third_container").addClass('hide')
     }
-    if (this.classList.contains("contact_me")){
+    if (this.classList.contains("contact_me") && window.screen.width <= 550){
+        const third_container = document.querySelector('.third_container')
+        third_container.scrollIntoView()
+    }
+    if (this.classList.contains("contact_me") && window.screen.width >= 550){
         $(".fa-phone").addClass("active")
         $(".fa-user").removeClass("active")
         $(".fa-file-code").removeClass("active")
@@ -87,3 +99,7 @@ $(".nav").on( "click", "ul li" , function() {
         $(".third_container").removeClass('hide')
     }
 });
+
+/*projects_cat.addEventListener('click', () =>{
+    if(window.screen.width <= 550){
+        )*/
